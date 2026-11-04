@@ -1,31 +1,56 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Econverse - Desenvolvedor Front-End
 
-### Vem ser #Econverse!
+Aplicação web desenvolvida para o teste técnico de Desenvolvedor Front-End na Econverse. O projeto consiste em uma página de e-commerce responsiva desenvolvida em React, TypeScript e SASS, consumindo a API oficial de produtos e disponibilizando um modal detalhado ao interagir com a vitrine.
 
-Segue abaixo as instruções para a execução do teste.
+## Tecnologias Utilizadas
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail gustavo.cipriano@econverse.com.br com o título **Teste Vaga FrontEnd**
+- **React**
+- **TypeScript**
+- **SASS / SCSS**
+- **Axios**
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## Funcionalidades
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+- **Vitrine Dinâmica:** Consumo do arquivo JSON com a lista de produtos fornecida pela Econverse.
+- **Modal Interativo:** Exibição dos detalhes do produto (foto, título, preço, descrição curta e controle de quantidade) ao clicar sobre o card.
+- **Layout Fiel ao Figma:** Estruturação visual completa com Header, Banner Promocional, Categorias, Vitrine e Footer.
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+## Instruções para Compilar e Rodar o Projeto
 
-**Boa sorte! ;)**
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado na máquina.
+- [Git](https://git-scm.com/) configurado.
+
+### Passos para Execução
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/trevisz/teste-front-end.git
+   ```
+
+2. **Acessar a pasta do projeto:**
+   ```bash
+   cd teste-front-end
+   ```
+
+3. **Instalar as dependências:**
+   ```bash
+   npm install
+   ```
+
+4. **Executar a aplicação em modo de desenvolvimento:**
+   ```bash
+   npm start
+   ```
+
+5. A aplicação estará disponível no seu navegador no endereço:
+   ```text
+   http://localhost:3000
+   ```
+
+##  Build para Produção
+
+Para gerar a compilação otimizada para produção:
+```bash
+npm run build
+```
